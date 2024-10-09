@@ -1,0 +1,171 @@
+.tasks {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-left: 40%;
+}
+
+.singleTask {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border: 1px solid #f05a5a;
+    border-radius: 5px;
+    background-color: #f1aeae;
+    transition: background-color 0.3s;
+}
+
+.singleTask:hover {
+    background-color: #f36f6f;
+}
+
+.singleTaskcompleted {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border: 1px solid #6fef65;
+    border-radius: 5px;
+    background-color: #a3ea8e;
+    transition: background-color 0.3s;
+}
+
+.singleTaskcompleted:hover {
+    background-color: #6fef65;
+}
+
+p {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+h5 {
+    font-size: 16px;
+    color: #666;
+    margin: 5px 0 0;
+}
+
+.forinput {
+    max-width: 450px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.forinput label {
+    display: block;
+    margin-bottom: 5px; 
+    font-weight: bold;
+    color: #333;
+}
+
+.inputname, .inputhrs, select {
+    width: 90%; 
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd; 
+    border-radius: 5px; 
+    font-size: 16px; 
+    transition: border-color 0.3s; 
+}
+
+.inputname:focus, .inputhrs:focus, select:focus {
+    border-color: #007bff; 
+    outline: none; 
+}
+
+.submitbutton {
+    width: 100%; 
+    padding: 10px; 
+    background-color: #007bff; 
+    color: white; 
+    border: none;
+    border-radius: 5px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+}
+
+.submitbutton:hover {
+    background-color: #0056b3; 
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    font-family: Arial, sans-serif; 
+}
+
+.pagination-button {
+    background-color: #007bff; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px;
+}
+
+.pagination-button:disabled {
+    background-color: #cccccc; 
+    cursor: not-allowed;
+}
+
+.pagination-button:hover:not(:disabled) {
+    background-color: #0056b3; 
+}
+
+.pagination-info {
+    font-size: 16px;
+    margin: 0 10px;
+}
+
+.UDbuttons {
+    display: flex;
+    gap: 10px; 
+    margin-top: 10px; 
+}
+
+.UDbuttons button {
+    padding: 10px 15px; 
+    border: none; 
+    border-radius: 5px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    transition: background-color 0.3s, transform 0.2s; 
+}
+
+.UDbuttons button.edit {
+    background-color: #007bff; 
+    color: white; 
+}
+
+.UDbuttons button.edit:hover {
+    background-color: #0056b3; 
+    transform: scale(1.05); 
+}
+
+.UDbuttons button.delete {
+    background-color: #f44336; 
+    color: white; 
+}
+
+.UDbuttons button.delete:hover {
+    background-color: #d32f2f; 
+    transform: scale(1.05); 
+}
